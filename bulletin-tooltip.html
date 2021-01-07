@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+color: #304cb2;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #304cb2;
+  margin: 50px;
+ font-style: italic;
+	font-family: Segoe UI
+    
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+border-style: solid;
+  border-color: #304cb2;;
+  width: 300px;
+  color: #304cb2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -150px;
+	font-family: Segoe UI
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 103%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #304cb2; transparent;
+	font-family: Segoe UI
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<div class="tooltip">What is this?
+  <span class="tooltiptext">This is the bulletin widget. Use it to add quick notes or announcements to this page for your CoHearts to see when they visit this page.</span>
+</div>
+
+
+<div class="tooltip">How does it work?
+  <span class="tooltiptext">Double click an item in the widget to expand it. Click "Submit a bulletin" to add your own, then return to the homepage to see it.</span>
+</div>
+
+
+</body>
+</html>
